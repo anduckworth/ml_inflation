@@ -7,11 +7,11 @@ We have used various machine learning models to study market trends from the ear
 
 ### Lou: Automated Stock Selection Using KMEANS
 
-Before analyzing the market to see what assets would be most resilient to inlfation we needed to come up with our portfolio of stocks to test it on. We wanted a well diversified portfolio but analyzing hundreds of stocks could be very costly time wise. K-Means clustering would take care of this problem by giving us a diversified and streamlined selection of stocks. Using unsupervised learning it is able to divide stock groups with similar characteristics into different groupings that we may not have been able to see on our own.   
+Before analyzing the market for inflation we needed to come up with a portfolio of stocks to test it on. We wanted a well diversified portfolio but analyzing hundreds of stocks could be very costly time wise. K-Means clustering took care of this problem by giving us a diversified and streamlined selection of stocks. Using unsupervised learning the model was able to divide stocks with similar characteristics into different groupings that we may not have been able to see on our own.   
 
 ![returns_volatility](https://user-images.githubusercontent.com/78940231/127224469-0990d302-cdf7-48cd-b327-08d091a1e616.png)
 
--We started out by pulling in all of the closing prices for the components of the S&P500. From there we created a data frame of the stocks average returns and volatility.
+-We started out by pulling in all of the closing prices for the components of the S&P500. From there we created a data frame of the average returns and volatility.
 
 ![elbow_curve](https://user-images.githubusercontent.com/78940231/127224647-5f2b8b5b-04f0-4cee-b790-a817f781aff6.png)
 
