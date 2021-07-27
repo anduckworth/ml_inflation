@@ -5,6 +5,20 @@
 
 We have used various machine learning models to study market trends from the early 2000s to 2021. We believe that a multifaceted machine learning approach would allow us to analyze various businesses, commodities, and macroeconomic metrics to discern the investments that may be most resilient to inflation and other periods of economic uncertainty such as during an ongoing global pandemic. We have also focused on company specific financial parameters and distinct outcomes as compared to large-cap closing prices.
 
+### Matt: Inflation Forecasting With FRED Macro-Data and Commodity Pricing
+
+Inflationary numbers (CPI, PPI) are on the rise and there is a great deal of debate as to the duration of this increase.  There are valid arguments linking it to supply chain interruptions, and others arguing it is tied more closely to fiscal policy.  In this research, we used several data sets from FRED going back to 2000.  Our feature set included, Commercial and Industrial Loans, Unemployment, Housing Starts, Personal Savings Rate, 10yr Treasury, and CPI.  The FRED data became our X (independent) data set, while CPI was our Y (dependent).  
+
+An initial analysis of the data using a correlation matrix, revealed a strong relationship with C&I Loans, and a moderate relationship with Unemployment.  
+
+Our models were built with regression methods, so our data needed to be lagged and we also used log returns to reduce the scale in the data.
+
+When examining the model performance, we paid close attention to results with our Test set.  Elastic Net, KNN, and GBR performed the best out of the 11 tested.  We also developed a LSTM which did not perform well.
+
+The second approach to our inflation forecasting method was to repeat the process using commodity pricing as our X data set.  We followed the same methodology and appear to have derived a more meaningful model as a result using GBR. 
+
+Althoug the model seems to lag the actual numbers in areas and did not catch the 2020 drop, it moves in the correct directions and could be a viable tool for forecasts when tuned further.  
+
 ### Lou: Automated Stock Selection Using KMEANS
 
 Before analyzing the market for inflation we needed to come up with a portfolio of stocks to test it on. We wanted a well diversified portfolio but analyzing hundreds of stocks could be very costly time wise. K-Means clustering took care of this problem by giving us a diversified and streamlined selection of stocks. Using unsupervised learning the model was able to divide stocks with similar characteristics into different groupings that we may not have been able to see on our own.   
