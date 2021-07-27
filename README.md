@@ -7,14 +7,25 @@ We have used various machine learning models to study market trends from the ear
 
 ### Lou: Automated Stock Selection Using KMEANS
 
-### Findings <br>
-![](image)<br>
+Before analyzing the market to see what assets would be most resilient to inlfation we needed to come up with our portfolio of stocks to test it on. We wanted a well diversified portfolio but analyzing hundreds of stocks could be very costly time wise. K-Means clustering would take care of this problem by giving us a diversified and streamlined selection of stocks. Using unsupervised learning it is able to divide stock groups with similar characteristics into different groupings that we may not have been able to see on our own.   
 
-![caption](image)<br>
+![returns_volatility](https://user-images.githubusercontent.com/78940231/127224469-0990d302-cdf7-48cd-b327-08d091a1e616.png)
+-We started out by pulling in all of the closing prices for the components of the S&P500. From there we created a data frame of the stocks average returns and volatility.
 
-![caption](image)<br>
+![elbow_curve](https://user-images.githubusercontent.com/78940231/127224647-5f2b8b5b-04f0-4cee-b790-a817f781aff6.png)
+-Before running the K-Means model we needed to figure out how many clusters we would want to seperate the data into. We used the elbow curve approach and it showed that 5 clusters was the optimal amount.
 
-![caption](image)<br>
+![clusters](https://user-images.githubusercontent.com/78940231/127224879-2d9b5586-cd0e-4bbc-9665-34d2f1518df1.png)
+-We then ran our K-Means model and got our clustering results
+-This graphs shows the 5 different clusters and the stars represent the centroid of each cluster. 
+
+![sharpe_ratio](https://user-images.githubusercontent.com/78940231/127225092-b6291f21-10ef-47c7-bc40-70abb0163252.png)
+-To ensure a well diversified portfolio we selected one stock from each cluster. We did this by calculating the Sharpe Ratio for each stock and then taking the stock with the highest ratio from each cluster 
+-The Sharpe Ratio is a finacial metric that measures the performance of a stock vs its risk. The higher the score the better
+
+![sp500_vs_selected_stocks](https://user-images.githubusercontent.com/78940231/127225412-ad277632-e998-4da2-8d46-37ed674220ef.png)
+-By doing this we landed upon 5 well diversified stocks from a dataset of hundreds 
+
 
 ### Matt: Machine Learning on Macro Economic Metrics and Commodities
 
