@@ -11,13 +11,18 @@ Inflationary numbers (CPI, PPI) are on the rise and there is a great deal of deb
 
 An initial analysis of the data using a correlation matrix, revealed a strong relationship with C&I Loans, and a moderate relationship with Unemployment.  
 ![correlationFred](https://github.com/anduckworth/ml_inflation/blob/f16cfdc6979e265d982b107b6c43fcaba5e74041/Images/FREDdataCorrelation.png)
+
 Our models were built with regression methods, so our data needed to be lagged and we also used log returns to reduce the scale in the data.
 
 When examining the model performance, we paid close attention to results with our Test set.  Elastic Net, KNN, and GBR performed the best out of the 11 tested.  We also developed a LSTM which did not perform well.
 
-The second approach to our inflation forecasting method was to repeat the process using commodity pricing as our X data set.  We followed the same methodology and appear to have derived a more meaningful model as a result using GBR. 
+![AlgoFred](https://github.com/anduckworth/ml_inflation/blob/fb7439556cb1804e8aa387fc0770aa5cd7b8871a/Images/FREDalgocomparison.png)
 
-Althoug the model seems to lag the actual numbers in areas and did not catch the 2020 drop, it moves in the correct directions and could be a viable tool for forecasts when tuned further.  
+The second approach to our inflation forecasting method was to repeat the process using commodity pricing as our X data set.  We followed the same methodology and appear to have derived a more meaningful model as a result using GBR. 
+![CommCorr](https://github.com/anduckworth/ml_inflation/blob/fb7439556cb1804e8aa387fc0770aa5cd7b8871a/Images/commodities_correlation.png)
+Althoug the model seems to lag the actual numbers in areas and did not catch the 2020 drop, it moves in the correct directions and could be a viable tool for forecasts when tuned further. 
+
+![CommGBR](https://github.com/anduckworth/ml_inflation/blob/fb7439556cb1804e8aa387fc0770aa5cd7b8871a/Images/GBRwithCOMMODITY.png)
 
 ### Lou: Automated Stock Selection Using KMEANS
 
