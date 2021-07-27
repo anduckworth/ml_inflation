@@ -10,7 +10,7 @@ We have used various machine learning models to study market trends from the ear
 Inflationary numbers (CPI, PPI) are on the rise and there is a great deal of debate as to the duration of this increase.  There are valid arguments linking it to supply chain interruptions, and others arguing it is tied more closely to fiscal policy.  In this research, we used several data sets from FRED going back to 2000.  Our feature set included, Commercial and Industrial Loans, Unemployment, Housing Starts, Personal Savings Rate, 10yr Treasury, and CPI.  The FRED data became our X (independent) data set, while CPI was our Y (dependent).  
 
 An initial analysis of the data using a correlation matrix, revealed a strong relationship with C&I Loans, and a moderate relationship with Unemployment.  
-
+![correlationFred](https://github.com/anduckworth/ml_inflation/blob/f16cfdc6979e265d982b107b6c43fcaba5e74041/Images/FREDdataCorrelation.png)
 Our models were built with regression methods, so our data needed to be lagged and we also used log returns to reduce the scale in the data.
 
 When examining the model performance, we paid close attention to results with our Test set.  Elastic Net, KNN, and GBR performed the best out of the 11 tested.  We also developed a LSTM which did not perform well.
