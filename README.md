@@ -8,8 +8,8 @@
 ### Question 1<br>
 
 ### Findings <br>
-![caption](image
-)<br>
+![caption](image)<br>
+
 ### Question 2<br>
 
 ### Findings <br>
