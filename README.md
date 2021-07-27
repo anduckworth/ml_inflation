@@ -1,15 +1,19 @@
 # Building a Resilient Portfolio
 ## Mala Sharma, Alexander Narvaez-Duckworth, Louis Donofrio, George Mihalopoulos, Matt Szoke
 
-
-
 ## Proposal / Hypothesis
 
-We have used machine learning and stock analysis to study market trends from the early 2000s to 2021. We believe that a multifaceted machine learning approach would allow us to analyze various businesses, commodities, and macroeconomic metrics to discern the investments that may be most resilient to inflation. We have also focused on company specific financial parameters and distinct outcomes as compared to large-cap closing prices.
+We have used various machine learning models to study market trends from the early 2000s to 2021. We believe that a multifaceted machine learning approach would allow us to analyze various businesses, commodities, and macroeconomic metrics to discern the investments that may be most resilient to inflation and other periods of economic uncertainty such as during an ongoing global pandemic. We have also focused on company specific financial parameters and distinct outcomes as compared to large-cap closing prices.
 
 ### Lou: Automated Stock Selection Using KMEANS
 
 ### Findings <br>
+![](image)<br>
+
+![caption](image)<br>
+
+![caption](image)<br>
+
 ![caption](image)<br>
 
 ### Matt: Machine Learning on Macro Economic Metrics and Commodities
