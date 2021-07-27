@@ -1,9 +1,11 @@
-#Building a Resilient Portfolio
-##Mala Sharma, Alexander Narvaez-Duckworth, Louis Donofrio, George Mihalopoulos, Matt Szoke
+# Building a Resilient Portfolio
+## Mala Sharma, Alexander Narvaez-Duckworth, Louis Donofrio, George Mihalopoulos, Matt Szoke
 
 
 
-## Proposal / Hypothesis<br> We have used machine learning and stock analysis to study market trends from the early 2000s to 2021. We believe that a multifaceted machine learning approach would allow us to analyze various stocks over long periods of time and help us discern the investments that may be most resilient to recession, inflation, and the economic uncertainties of a pandemic world. We have also focused on company specific financial parameters and distinct outcomes as compared to large-cap closing prices.
+## Proposal / Hypothesis
+
+We have used machine learning and stock analysis to study market trends from the early 2000s to 2021. We believe that a multifaceted machine learning approach would allow us to analyze various stocks over long periods of time and help us discern the investments that may be most resilient to recession, inflation, and the economic uncertainties of a pandemic world. We have also focused on company specific financial parameters and distinct outcomes as compared to large-cap closing prices.
 
 ### Question 1<br>
 
