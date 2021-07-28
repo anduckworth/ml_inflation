@@ -11,6 +11,19 @@ Inflationary numbers (CPI, PPI) are on the rise and there is a great deal of deb
 
 An initial analysis of the data using a correlation matrix, revealed a strong relationship with C&I Loans, and a moderate relationship with Unemployment.  
 ![correlationFred](https://github.com/anduckworth/ml_inflation/blob/f16cfdc6979e265d982b107b6c43fcaba5e74041/Images/FREDdataCorrelation.png)
+Key
+
+HG=F  is Copper 
+SI=F  is Silver
+GC=F  is Gold
+LBS=F is Lumber
+CL=F  is Crude Oil
+KC=F  is Coffee
+ZC=F  is Corn
+ZW=F  is Wheat
+CPI   is Consumer Price Index
+
+
 
 Our models were built with regression methods, so our data needed to be lagged and we also used log returns to reduce the scale in the data.
 
