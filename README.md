@@ -43,20 +43,27 @@ Before analyzing the market for inflation we needed to come up with a portfolio 
 
 ![sharpe_ratio](https://user-images.githubusercontent.com/78940231/127225092-b6291f21-10ef-47c7-bc40-70abb0163252.png)
 
--To ensure a well diversified portfolio we selected one stock from each cluster. We did this by calculating the Sharpe Ratio for each stock and then taking the stock with the highest ratio from each cluster 
--The Sharpe Ratio is a finacial metric that measures the performance of a stock vs its risk. The higher the score the better
+-To ensure a well diversified portfolio we selected one stock from each cluster. We did this by calculating the Sharpe Ratio for each stock and then taking the stock with the highest ratio from each cluster.
+-The Sharpe Ratio is a financial metric that measures the performance of a stock vs its risk. The higher the score the better
 
 ![sp500_vs_selected_stocks](https://user-images.githubusercontent.com/78940231/127225412-ad277632-e998-4da2-8d46-37ed674220ef.png)
 
 -By doing this we landed upon 5 well diversified stocks from a dataset of hundreds 
 
 ### Alex: Machine Learning on Company Financials
+## Home Depot Case Study Part I
 
 We used [Polygon](https://polygon.io/stocks) as the primary source of company financial information. This was a useful API for testing because of its speed and easy access to information through Get requests. We pulled in all of the financial data for our respective companies to the notebook and created a dataframe from it with a datetime index. Then we set a return period for the amount of time we would lag the dataset in order to perform training and testing, and scaled/preprocessed the data using standard scaler. To visualize the data, we utilized a correlation matrix. To dial in on the data that we were using in our X variable we decided to utilize the selectKbest method from sklearn. This helped us narrow down the valuable columns to 10, using the selectkbest top 10 scores. After this, we set our X variable dataset to these 10 columns and proceeded with determing the best models to use for this data. The lowest errors for the testing data the Linear Regression, Elastic Net, and Lasso models from sklearn. We graphed these threee different models and the predicted was extremely similar to the actual for all three. 
 
 ![LinearRegression](financialStatements/images/seven.png)
 ![Elastic Net](financialStatements/images/eight.png)
 ![Lasso](financialStatements/images/nine.png)
+![Correlation Matrix](ml_inflation/Images/Alex_Correlation_Matrix.png)
+
+### George: Natural Language Processing for Financial Analysis
+## Home Depot Case Study Part II
+
+![Home Depot Closing Prices](ml_inflation/Images/HD_plot_1_George.png)
 
 ### Findings 
 
