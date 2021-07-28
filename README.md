@@ -12,8 +12,6 @@ Inflationary numbers (CPI, PPI) are on the rise and there is a great deal of deb
 An initial analysis of the data using a correlation matrix, revealed a strong relationship with C&I Loans, and a moderate relationship with Unemployment.  
 ![correlationFred](https://github.com/anduckworth/ml_inflation/blob/f16cfdc6979e265d982b107b6c43fcaba5e74041/Images/FREDdataCorrelation.png)
 
-
-
 Our models were built with regression methods, so our data needed to be lagged and we also used log returns to reduce the scale in the data.
 
 When examining the model performance, we paid close attention to results with our Test set.  Elastic Net, KNN, and GBR performed the best out of the 11 tested.  We also developed a LSTM which did not perform well.
@@ -23,7 +21,7 @@ When examining the model performance, we paid close attention to results with ou
 The second approach to our inflation forecasting method was to repeat the process using commodity pricing as our X data set.  We followed the same methodology and appear to have derived a more meaningful model as a result using GBR. 
 
 ![CommCorr](https://github.com/anduckworth/ml_inflation/blob/fb7439556cb1804e8aa387fc0770aa5cd7b8871a/Images/commodities_correlation.png)
-Althoug the model seems to lag the actual numbers in areas and did not catch the 2020 drop, it moves in the correct directions and could be a viable tool for forecasts when tuned further. KEY: <br>
+Although the model seems to lag the actual numbers in areas and did not catch the 2020 drop, it moves in the correct directions and could be a viable tool for forecasts when tuned further. KEY: <br>
 HG=F  is Copper <br>
 SI=F  is Silver <br>
 GC=F  is Gold <br>
@@ -85,3 +83,4 @@ We used [Polygon](https://polygon.io/stocks) as the primary source of company fi
 
 We found that marketCapitalization,	sharePriceAdjustedClose, priceSales, priceToSalesRatio, enterpriseValueOverEBITDA, priceToEarningsRatio, priceEarnings, enterpriseValueOverEBIT, dividendYield, issuanceEquityShares were the pieces of a companies financial statement that contribute the most to predicting the enterprise value. This makes sense because the [Enterprise value includes in its calculation the market capitalization of a company, short-term and long-term debt as well as any cash on the company's balance sheet.](https://www.investopedia.com/terms/e/enterprisevalue.asp) Enterprise value is basically a more robust form of the market capitalization because if you were to completely takeover the company, the enterprise value tells you the debt you would have to pay off and the total amount of cash on hand that is able to pay that debt off and any other parts of the acquisition. To take this part of the project a step further, I beleive it would be useful to connect the beginning of the company financials to the KMEANS automated stock selection and perform the financial analysis based off of those companies. In addition to this we would also be able to tie the performance of these company's enterprise values to inflation to create an automated, machine learning generated, portfoloio selector to compete with an inflationary environment.
 
+Google Slides and README editing by Mala Sharma. Everything in this project was a team effort. All work here is original and posted in July 2021.
