@@ -63,7 +63,7 @@ We used [Polygon](https://polygon.io/stocks) as the primary source of company fi
 ### George: Natural Language Processing for Financial Analysis
 ## Home Depot Case Study Part II
 
-![Home Depot Closing Prices](ml_inflation/Images/HD_plot_1_George.png)
+![Home Depot Closing Prices](https://github.com/anduckworth/ml_inflation/blob/main/Images/HD_plot_1_George.png)
 
 ### Findings 
 
