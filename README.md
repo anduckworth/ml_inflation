@@ -21,20 +21,20 @@ When examining the model performance, we paid close attention to results with ou
 ![AlgoFred](https://github.com/anduckworth/ml_inflation/blob/fb7439556cb1804e8aa387fc0770aa5cd7b8871a/Images/FREDalgocomparison.png)
 
 The second approach to our inflation forecasting method was to repeat the process using commodity pricing as our X data set.  We followed the same methodology and appear to have derived a more meaningful model as a result using GBR. 
+
 ![CommCorr](https://github.com/anduckworth/ml_inflation/blob/fb7439556cb1804e8aa387fc0770aa5cd7b8871a/Images/commodities_correlation.png)
-Althoug the model seems to lag the actual numbers in areas and did not catch the 2020 drop, it moves in the correct directions and could be a viable tool for forecasts when tuned further. 
+Althoug the model seems to lag the actual numbers in areas and did not catch the 2020 drop, it moves in the correct directions and could be a viable tool for forecasts when tuned further. KEY: <br>
+HG=F  is Copper <br>
+SI=F  is Silver <br>
+GC=F  is Gold <br>
+LBS=F is Lumber <br>
+CL=F  is Crude Oil <br>
+KC=F  is Coffee <br>
+ZC=F  is Corn <br>
+ZW=F  is Wheat <br>
+CPI   is Consumer Price Index <br>
 
 ![CommGBR](https://github.com/anduckworth/ml_inflation/blob/fb7439556cb1804e8aa387fc0770aa5cd7b8871a/Images/GBRwithCOMMODITY.png)
-KEY: <br>
-HG=F  is Copper 
-SI=F  is Silver
-GC=F  is Gold
-LBS=F is Lumber
-CL=F  is Crude Oil
-KC=F  is Coffee
-ZC=F  is Corn
-ZW=F  is Wheat
-CPI   is Consumer Price Index
 
 ### Lou: Automated Stock Selection Using KMEANS
 
