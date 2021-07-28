@@ -65,6 +65,10 @@ We used [Polygon](https://polygon.io/stocks) as the primary source of company fi
 
 ![Home Depot Closing Prices](https://github.com/anduckworth/ml_inflation/blob/main/Images/HD_plot_1_George.png)
 
+![Home Depot Percent Change in Closing Prices](https://github.com/anduckworth/ml_inflation/blob/main/Images/HD_pct_change.png)
+
+![Home Depot Sentiment Analysis from Quarterly Reports](https://github.com/anduckworth/ml_inflation/blob/main/Images/pos_neg_HD_sentiment.png)
+
 ### Findings 
 
 We found that marketCapitalization,	sharePriceAdjustedClose, priceSales, priceToSalesRatio, enterpriseValueOverEBITDA, priceToEarningsRatio, priceEarnings, enterpriseValueOverEBIT, dividendYield, issuanceEquityShares were the pieces of a companies financial statement that contribute the most to predicting the enterprise value. This makes sense because the [Enterprise value includes in its calculation the market capitalization of a company, short-term and long-term debt as well as any cash on the company's balance sheet.](https://www.investopedia.com/terms/e/enterprisevalue.asp) Enterprise value is basically a more robust form of the market capitalization because if you were to completely takeover the company, the enterprise value tells you the debt you would have to pay off and the total amount of cash on hand that is able to pay that debt off and any other parts of the acquisition. To take this part of the project a step further, I beleive it would be useful to connect the beginning of the company financials to the KMEANS automated stock selection and perform the financial analysis based off of those companies. In addition to this we would also be able to tie the performance of these company's enterprise values to inflation to create an automated, machine learning generated, portfoloio selector to compete with an inflationary environment.
