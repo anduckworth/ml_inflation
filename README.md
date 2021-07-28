@@ -11,17 +11,6 @@ Inflationary numbers (CPI, PPI) are on the rise and there is a great deal of deb
 
 An initial analysis of the data using a correlation matrix, revealed a strong relationship with C&I Loans, and a moderate relationship with Unemployment.  
 ![correlationFred](https://github.com/anduckworth/ml_inflation/blob/f16cfdc6979e265d982b107b6c43fcaba5e74041/Images/FREDdataCorrelation.png)
-Key
-
-HG=F  is Copper 
-SI=F  is Silver
-GC=F  is Gold
-LBS=F is Lumber
-CL=F  is Crude Oil
-KC=F  is Coffee
-ZC=F  is Corn
-ZW=F  is Wheat
-CPI   is Consumer Price Index
 
 
 
@@ -36,6 +25,16 @@ The second approach to our inflation forecasting method was to repeat the proces
 Althoug the model seems to lag the actual numbers in areas and did not catch the 2020 drop, it moves in the correct directions and could be a viable tool for forecasts when tuned further. 
 
 ![CommGBR](https://github.com/anduckworth/ml_inflation/blob/fb7439556cb1804e8aa387fc0770aa5cd7b8871a/Images/GBRwithCOMMODITY.png)
+KEY: <br>
+HG=F  is Copper 
+SI=F  is Silver
+GC=F  is Gold
+LBS=F is Lumber
+CL=F  is Crude Oil
+KC=F  is Coffee
+ZC=F  is Corn
+ZW=F  is Wheat
+CPI   is Consumer Price Index
 
 ### Lou: Automated Stock Selection Using KMEANS
 
